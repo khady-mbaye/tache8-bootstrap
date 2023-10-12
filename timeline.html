@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeline</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .timeline{
+            position: relative;
+            max-width: 1200px;
+            margin: 100px auto;
+        }
+        .container-about{
+            padding: 10px 50px ;
+            position: relative;
+            width: 50%;
+            /* background-color: orange; */
+        }
+        .text-box{
+            padding: 20px 30px ;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+
+        }
+        .text-box h2{
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+        .left-container{
+            left: 0;
+        }
+        .right-container{
+            left: 50%;
+        }
+        .container-about img  ,.last{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #dddddd;
+            z-index: 10;
+            right: -50px;
+            top: -10px;
+            
+            
+        }
+        .right-container img{
+            left: -50px;
+            top: -10px;
+
+        }
+        .last{
+            color: white;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            border: 2px solid #dddddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .last p{
+            width: 75%;
+            text-transform: capitalize;
+        }
+        .timeline::after{
+            content:  '';
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            background-color: #dddddd;
+            top: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: -1;
+        }
+        @media screen and (max-width:900px){
+            .timeline{
+                margin: 50px auto;
+            }
+            .timeline::after{
+                left: 60px;
+            }
+            .container-about{
+                width: 100%;
+                padding-left: 80px;
+                padding-right: 25px;
+
+            }
+            .right-container{
+                left: 0;
+            }
+            .left-container img , .right-container img , .last{
+                left: 10px;
+                
+            }
+            .text-box{
+                top: -30px;
+                left: 20px;
+            }
+            .text-box p{
+                font-size: 20px;
+                
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="container-about left-container">
+            <img src="time1.jpg" alt="une image">
+            <div class="text-box">
+                <h2>2009-2011</h2>
+                <h2>our humble beginings</h2>
+                <p>lorem ipsum dolar sit amet , consecteur adipiscing elit. Sunt ut voluptatum eius sapiente , totam reciendis temploribus qui quibusdam
+                    sit vero unde , sed incidunt et ea quo dolore laudantium consecteur!
+                </p>
+            </div>
+        </div>
+        <div class="container-about right-container">
+            <img src="time2.jpg" alt="une image">
+            <div class="text-box">
+                <h2>march 2011</h2>
+                <h2>an agency is born</h2>
+                <p>lorem ipsum dolar sit amet , consecteur adipiscing elit. Sunt ut voluptatum eius sapiente , totam reciendis temploribus qui quibusdam
+                    sit vero unde , sed incidunt et ea quo dolore laudantium consecteur!
+                </p>
+            </div>
+        </div>
+        <div class="container-about left-container">
+            <img src="time3.jpg" alt="une image">
+            <div class="text-box">
+                <h2>december 2015</h2>
+                <h2>transition to full service</h2>
+                <p>lorem ipsum dolar sit amet , consecteur adipiscing elit. Sunt ut voluptatum eius sapiente , totam reciendis temploribus qui quibusdam
+                    sit vero unde , sed incidunt et ea quo dolore laudantium consecteur!
+                </p>
+            </div>
+        </div>
+        <div class="container-about right-container">
+            <img src="time4.jpg" alt="une image">
+            <div class="text-box">
+                <h2>july 2020</h2>
+                <h2>phase two expansion</h2>
+                <p>lorem ipsum dolar sit amet , consecteur adipiscing elit. Sunt ut voluptatum eius sapiente , totam reciendis temploribus qui quibusdam
+                    sit vero unde , sed incidunt et ea quo dolore laudantium consecteur!
+                </p>
+            </div>
+        </div>
+         <div class="container-about left-container">
+            <div class="last">
+               <p> be part of our story</p>
+            </div>
+            <div class="text-box">
+                <!-- <h2>july 2020</h2>
+                <h2>phase two expansion</h2>
+                <p>yhwfver frefbur fergruegfr  rburj er gneg egre ger girg e gegjer erngrfmnd vcdfvjefiogjnb cerijeugb eruhgbv erbfv jnb dcv jnb efv n v n fvnb fvjn rfijhnb uygv gv gfcvbnnb </p> -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
